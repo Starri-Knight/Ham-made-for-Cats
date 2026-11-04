@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#140a2e">
+  <title>StarriKnight — AirDrop</title>
+  <style>html, body { margin: 0; height: 100%; background: #140a2e; }</style>
+  <script>
+    /* Share this page's link (/airdrop/) by AirDrop.
+       It hands straight off to the main page with the AirDrop entrance.
+       Add ?from=Name to change who the share sheet says it's from (default: Emi). */
+    (function () {
+      var extra = location.search ? '&' + location.search.slice(1) : '';
+      location.replace('../?airdrop' + extra + location.hash);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=../"></noscript>
+</head>
+<body></body>
+</html>
